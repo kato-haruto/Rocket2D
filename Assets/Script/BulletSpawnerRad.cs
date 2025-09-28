@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class BulletSpawner : MonoBehaviour
+public class BulletSpawnerRad : MonoBehaviour
 {
-    public GameObject bulletPrefab;   // 青弾プレハブ
-    public float spawnInterval = 1.5f; // 発射間隔
+    public GameObject bulletPrefab;   // 赤弾プレハブ
+    public float spawnInterval = 1.2f; // 発射間隔
     public Vector2 fireDirection = Vector2.left; // 発射方向（左へ）
 
     private float timer;
@@ -21,6 +21,6 @@ public class BulletSpawner : MonoBehaviour
     void SpawnBullet()
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        bullet.GetComponent<BlueBullet>().SetDirection(fireDirection);
+        bullet.GetComponent<RedBullet>().SetDirection(fireDirection);
     }
 }

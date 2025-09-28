@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnergyBullet : MonoBehaviour
+public class BlueBullet : MonoBehaviour
 {
     [Header("ˆÚ“®‘¬“x")]
     public float speed = 5f;
