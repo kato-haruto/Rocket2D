@@ -30,16 +30,9 @@ public class RedBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // パリィ判定は無視（青弾と違って消えない）
-        if (other.CompareTag("Parry"))
-        {
-            return;
-        }
-
-        // プレイヤー本体に当たった場合
         if (other.CompareTag("Player"))
         {
-            Debug.Log("赤弾に被弾！");
+            other.GetComponent<PlayerHealth>()?.TakeDamage();
             Destroy(gameObject);
         }
     }

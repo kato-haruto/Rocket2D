@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 229665038460203874, guid: 1a7a4621bbd1d3245a31c77efc5a1bac, type: 3}
-  spawnInterval: 4
+  spawnInterval: 1
   fireDirection: {x: 0, y: -1}
 --- !u!4 &464510339
 Transform:
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8289890213646001999, guid: 826ca6acb9dd920499548f0ad9681e1a, type: 3}
-  spawnInterval: 4
+  spawnInterval: 0.5
   fireDirection: {x: 0, y: -1}
 --- !u!4 &1525666763
 Transform:
@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 1623916856}
   - component: {fileID: 1623916855}
   - component: {fileID: 1623916860}
+  - component: {fileID: 1623916861}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -738,6 +739,20 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   parryColor: {r: 1, g: 1, b: 1, a: 1}
   parryHitbox: {fileID: 917891986}
+--- !u!114 &1623916861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623916854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf0a99d17e7a6d4987db74ba74366f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 3
+  invincibleDuration: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
