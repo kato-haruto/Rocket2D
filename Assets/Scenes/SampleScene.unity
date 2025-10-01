@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 229665038460203874, guid: 1a7a4621bbd1d3245a31c77efc5a1bac, type: 3}
-  spawnInterval: 1.8
+  spawnInterval: 4
   fireDirection: {x: 0, y: -1}
 --- !u!4 &464510339
 Transform:
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8289890213646001999, guid: 826ca6acb9dd920499548f0ad9681e1a, type: 3}
-  spawnInterval: 1.2
+  spawnInterval: 4
   fireDirection: {x: 0, y: -1}
 --- !u!4 &1525666763
 Transform:

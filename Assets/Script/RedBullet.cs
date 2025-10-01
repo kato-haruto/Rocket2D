@@ -39,7 +39,7 @@ public class RedBullet : MonoBehaviour
         // プレイヤー本体に当たった場合
         if (other.CompareTag("Player"))
         {
-            Debug.Log("赤弾に被弾！HPを減らす処理予定");
+            Debug.Log("赤弾に被弾！");
             Destroy(gameObject);
         }
     }

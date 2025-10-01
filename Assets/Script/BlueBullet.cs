@@ -33,14 +33,14 @@ public class BlueBullet : MonoBehaviour
         // パリィに触れたら吸収
         if (other.CompareTag("Parry"))
         {
-            Debug.Log("パリィ成功！青弾吸収");
+            Debug.Log("パリィ成功！");
             Destroy(gameObject);
         }
 
         // プレイヤー本体に当たった場合（まだHPシステム仮）
         if (other.CompareTag("Player"))
         {
-            Debug.Log("青弾に被弾！（パリィ失敗）");
+            Debug.Log("青弾に被弾！");
             Destroy(gameObject);
         }
     }
